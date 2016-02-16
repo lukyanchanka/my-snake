@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication2
 {
-    class point
+    class Point
     {
+        public int x;
+        public int y;
+        public char sym;
+
     }
 }
