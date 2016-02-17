@@ -11,18 +11,19 @@ namespace ConsoleApplication2
         static void Main(string[] args)
 
         {
-            Point p1 = new Point(1, 1, '#'); ;
+            Point p = new Point(4, 5, '#'); 
           
-            Point p2 = new Point(2,2,'#');
-
-            p1.Drow();
-            p2.Drow();
+            //Point p2 = new Point(2,2,'#');
 
             HorizontalLine hl = new HorizontalLine(5, 10, 4, '+');
-            VerticalLine vl = new VerticalLine(10, 0, 16, '-');
+            VerticalLine vl = new VerticalLine(20, 1, 16, '+');
 
-            hl.Drow();
-            vl.Drow();
+
+            //hl.Drow();
+            //vl.Drow();
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+
+            snake.Drow();
 
             Console.ReadLine();
 
