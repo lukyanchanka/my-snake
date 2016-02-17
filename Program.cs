@@ -14,15 +14,15 @@ namespace ConsoleApplication2
             Point p1 = new Point(1, 1, '#'); ;
           
             Point p2 = new Point(2,2,'#');
-       
-            
-            List <Point> pointList = new List<Point>();
-            pointList.Add(p1);
-            pointList.Add(p2);
-            foreach (Point p in pointList)
-            {
-                p.Drow();
-            }
+
+            p1.Drow();
+            p2.Drow();
+
+            HorizontalLine hl = new HorizontalLine(5, 10, 4, '+');
+            VerticalLine vl = new VerticalLine(10, 0, 16, '-');
+
+            hl.Drow();
+            vl.Drow();
 
             Console.ReadLine();
 
